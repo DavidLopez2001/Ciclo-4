@@ -6,7 +6,8 @@ Nombre Integrantes:
     Carlos David Barragan Lopez - 
     José Luis Ceballos Galvis - 
     Jorge Esteban Ortiz Montoya - 
-    Julian Camilo Ortiz Montoya 
+    Julian Camilo Ortiz Montoya -
+    Jose Girado Carrillo                 
     
 Descripcion Corta: En este proyecto se realizara el desarollo de un software completamente funcional
 para la empresa Tecnologia S.A.S para solventar los problema relacionados con el inventariolos como lo serian
