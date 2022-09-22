@@ -21,12 +21,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-#ekz#-t)&qks%wnl)4_mko)r8rtxin+6k=tf3r)od9#++mvq_6'
+SECRET_KEY = 'django-insecure-u@va&i*i)+x)e7s-3p&s=42e%bsecs0q-9a+q%)r4o=kvh=11m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '1aa9-179-1-128-194.ngrok.io', '127.0.0.1'
+]
 
 
 # Application definition
@@ -38,8 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework_simplejwt',
     'rest_framework',
-    'rest_framework_jwt',
     'inventarioApp',
 ]
 
@@ -86,12 +88,15 @@ WSGI_APPLICATION = 'inventarioProject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+
 
 SIMPLE_JWT = {
 'ACCESS_TOKEN_LIFETIME': timedelta(minutes=5),
@@ -100,10 +105,10 @@ SIMPLE_JWT = {
 'BLACKLIST_AFTER_ROTATION': True,
 'UPDATE_LAST_LOGIN': False,
 'ALGORITHM': 'HS256',
+
 'USER_ID_FIELD': 'id',
 'USER_ID_CLAIM': 'user_id',
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators

@@ -1,4 +1,4 @@
-#!/home/ortiz/Sistema_inventario/Ciclo-4/Ciclo-4/env/bin/python3
+#!/home/ortiz/Ciclo-4/env/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

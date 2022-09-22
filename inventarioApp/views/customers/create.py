@@ -1,4 +1,4 @@
-from django.http import HttpResponse 
+from django.http import HttpResponse
 
-def create_customer(request):
+def create_customers(request):
     return HttpResponse("MODULO DE CREACION DE CUSTOMER")
