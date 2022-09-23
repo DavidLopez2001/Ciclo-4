@@ -88,13 +88,26 @@ WSGI_APPLICATION = 'inventarioProject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+'''
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd1lj2al72pbd89',
+        'USER': 'eokjnenipleweq',
+        'PASSWORD': 'ad3b3af3676e15b7caace14a10bfccaa99d7d44a9ee4b9f33c8cd96f3011f7c6',
+        'HOST': 'ec2-35-170-146-54.compute-1.amazonaws.com',
+        'PORT': '5432',
+    }
+}
+
 
 
 
